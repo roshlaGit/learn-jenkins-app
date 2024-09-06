@@ -17,7 +17,7 @@ pipeline {
             }
             steps {
                 sh'''
-                echi 'test scm'
+                echo 'test scm'
                     ls -la
                     node --version
                     npm --version
