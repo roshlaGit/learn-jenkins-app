@@ -7,7 +7,7 @@ pipeline {
         REACT_APP_VERSION = "1.0.$BUILD_ID"
     }
     
-    stages {
+     stages {
 
         stage('Build') {
             agent {
@@ -115,9 +115,9 @@ pipeline {
             }
 
             environment {
-                CI_ENVIRONMENT_URL = 'YOUR NETLIFY SITE URL'
+                CI_ENVIRONMENT_URL = 'YOUR NETLIFY URL'
             }
-            
+
             steps {
                 sh '''
                     node --version
