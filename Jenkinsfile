@@ -9,7 +9,6 @@ pipeline {
     
     stages {
 
-
         stage('Build') {
             agent {
                 docker {
@@ -118,7 +117,7 @@ pipeline {
             environment {
                 CI_ENVIRONMENT_URL = 'YOUR NETLIFY SITE URL'
             }
-
+            
             steps {
                 sh '''
                     node --version
