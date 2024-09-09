@@ -24,7 +24,7 @@ pipeline {
                     // some block
                     sh '''
                     aws --version
-                    aws ecs register-task-definition --cli-input-json aws/task-defenition-prod.json
+                    aws ecs register-task-definition --cli-input-json file://aws/task-defenition-prod.json
                     '''
                     
                 }
